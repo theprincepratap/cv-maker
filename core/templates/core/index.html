@@ -1,0 +1,35 @@
+
+{% include 'core/header.html' %}
+{% load static %}
+
+<div id="content-wrapper" class="mt-4" style="padding-top: 1%;">
+     <div class="container-fluid">
+       <div class="card mb-2 col-md-12">
+           <div class="card-body">
+               <div class="row">
+                   <div class="col-md-4">
+                       <img src="{% static 'img/demo.png' %}" style="padding-left: 20% ; width : 90%">
+                   </div>
+                   <div class="col-md-7">
+
+                       <h1 class="text-primary">Say Goodbye to CV Struggles: Build a Winning Profile</h1>
+
+                       <p class="welcome_text">Don't let a weak CV hold you back! </p>
+                       <p class="welcome_text">Fill In The Blank Form, Generate And Download PDF Cv</p>
+
+                       <a href="{% url 'createcv' %}"><button class="startBtn">Get Started</button></a>
+                       <br/>
+                       <br/>
+                       <br/>
+
+                    {% include 'core/footer.html' %}
+                   </div>
+               </div>
+           </div>
+       </div>
+     </div>
+</div>
+
+
+
+
